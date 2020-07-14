@@ -1,0 +1,1 @@
+My second project with The Odin Project where I build a simple game of rock paper scissors 
