@@ -1,0 +1,38 @@
+<html>
+<body>
+<script>
+    let selections = ["Rock", "Paper", "Scissor"]
+    
+        function computerPlay() {
+            return selections[Math.floor(Math.random()*selections.length)];
+        }
+        
+        function playRound(playerSelection, computerSelection) {
+            let choice = playerSelection.toLowerCase()
+            if (choice == "rock" && computerSelection == "Scissor") {
+                return "You Win! Rock beats Scissors" 
+            }
+            else if (choice == "paper" && computerSelection == "Rock") {
+                return "You Win! Paper beats Rock"
+            }
+            else if (choice == "scissor" && computerSelection == "Paper") {
+                return "You Win! Scissors beats Paper"
+            }
+            
+            
+            else if (computerSelection == "Scissor" && choice == "paper") {
+                return "You Lose! Scissors beats Paper"
+            }
+            else if (computerSelection == "Rock" && choice == "scissor") {
+                return "You Lose! Rock beats Scissors"
+            }
+            else if (computerSelection == "Paper" && choice == "rock") {
+                return "You Lose! Paper beats Rock"
+            }
+        }
+    
+
+    console.log(playRound("rock", computerPlay()))
+</script>
+</body>
+</html>
