@@ -1,38 +1,25 @@
+<!DOCTYPE html>
 <html>
-<body>
-<script>
-    let selections = ["Rock", "Paper", "Scissor"]
-    
-        function computerPlay() {
-            return selections[Math.floor(Math.random()*selections.length)];
-        }
-        
-        function playRound(playerSelection, computerSelection) {
-            let choice = playerSelection.toLowerCase()
-            if (choice == "rock" && computerSelection == "Scissor") {
-                return "You Win! Rock beats Scissors" 
-            }
-            else if (choice == "paper" && computerSelection == "Rock") {
-                return "You Win! Paper beats Rock"
-            }
-            else if (choice == "scissor" && computerSelection == "Paper") {
-                return "You Win! Scissors beats Paper"
-            }
-            
-            
-            else if (computerSelection == "Scissor" && choice == "paper") {
-                return "You Lose! Scissors beats Paper"
-            }
-            else if (computerSelection == "Rock" && choice == "scissor") {
-                return "You Lose! Rock beats Scissors"
-            }
-            else if (computerSelection == "Paper" && choice == "rock") {
-                return "You Lose! Paper beats Rock"
-            }
-        }
-    
 
-    console.log(playRound("rock", computerPlay()))
-</script>
+<head>
+    <link href='styles.css' rel="stylesheet">
+</head>
+
+<body>
+    <header id="title">
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <div id="btn">
+        <input class='rock' type="image" src="images/rock.png">
+        <input class='paper' type="image" src="images/paper.png">
+        <input class='scissor' type="image" src="images/scissor.png">
+    </div>
+    <div>
+        <h2>VS</h2>
+    </div>
+    <div>
+        
+    </div>
 </body>
+
 </html>
