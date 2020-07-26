@@ -5,42 +5,86 @@ body {
     margin: 50px;
     background-color: #f4e1d2;
 }
+.subtitle {
+    font-size: 20px;
+    font-style: italic;
+}
 
 #title  {
     display: block;
-    border: 1px solid #b2b2b2;
+    border: 5px solid black;
     border-radius: 10px;
     color: black;
-    background-color: #b2b2b2;
+    background-color: #dc143c;
+    margin: 20px 100px;
 
 
 }
 
-#btn {
+.btn {
     display: block;
     margin: 75px;
 
 }
 
-.rock {
+#selection {
     height: 150px;
     width: 175px;
     border: 5px solid black;
     border-radius: 5px;
     margin-right: 25px;
+    transition: all .04s ease;
+    outline: none;
 }
-
-.paper {
+#selection:hover {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+h2 {
+    font-size: 60px;
+}
+.chimp {
     height: 150px;
     width: 175px;
     border: 5px solid black;
     border-radius: 5px;
-    margin-right: 25px;
+    margin-top: 40px;
+}
+.score-board {
+    margin: 20px auto;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 200px;
+    color: black;
+    font-size: 40px;
+    padding: 15px 20px;
+    position: relative;
 }
 
-.scissor {
-    height: 150px;
-    width: 175px;
-    border: 5px solid black;
-    border-radius: 5px;
+.badge {
+    background: #dc143c;
+    color: black;
+    font-size: 14px;
+    padding: 5px 10px;
+    
+}
+
+#user-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+
+}
+
+#chimp-label {
+    position: absolute;
+    top: 30px;
+    right: -25px;
+
+}
+
+.result {
+    margin: 30px;
+    font-size: 30px;
 }

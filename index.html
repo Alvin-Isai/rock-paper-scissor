@@ -8,18 +8,31 @@
 <body>
     <header id="title">
         <h1>Rock Paper Scissors</h1>
+        <p class="subtitle">Can you beat the Chimp?</p>
     </header>
-    <div id="btn">
-        <input class='rock' type="image" src="images/rock.png">
-        <input class='paper' type="image" src="images/paper.png">
-        <input class='scissor' type="image" src="images/scissor.png">
+    <div class="btn">
+        <input class='rock' id="selection" data-selection="Rock" type="image" src="images/rock.png">
+        <input class='paper' id="selection" data-selection="Paper" type="image" src="images/paper.png">
+        <input class='scissor' id="selection" data-selection="Scissor" type="image" src="images/scissor.png">
     </div>
     <div>
-        <h2>VS</h2>
+        <h2><strong>VS</strong></h2>
     </div>
     <div>
-        
+       <img class='chimp' src="images/chimp.jpg">
     </div>
+    
+    <div class="score-board">
+        <div id="user-label" class="badge"><strong>User</strong></div>
+        <div id="chimp-label" class="badge"><strong>Chimp</strong></div>
+        <span id="user-score">0</span>:<span id="chimp-score">0</span>
+    </div>
+
+    <div class='result'>
+        <p>Make your move!</p>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
